@@ -1,8 +1,8 @@
 {
-  "name": "vuetemplate",
+  "name": "invoice-creator",
   "version": "1.0.0",
-  "description": "This project is skelton for Vue.js",
-  "author": "shine",
+  "description": "Create invoice",
+  "author": "m.koyama",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
