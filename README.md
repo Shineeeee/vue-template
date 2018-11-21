@@ -7,7 +7,9 @@
 1. [Required](#required)
 1. [Procedure](#procedure)
     1. [Windows](#windows)
-    1. [Others (MacOS, Linux, etc.)](#others)
+    1. [Others (MacOS, Linux, etc.)](#others-macos-linux-etc)
+1. [Directory Structure](#directory-structure)
+    1. [src](#src)
 
 
 ## Overview
