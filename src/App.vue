@@ -1,23 +1,32 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <common-header></common-header>
+    <router-view></router-view>
+    <common-footer></common-footer>
   </div>
 </template>
 
 <script>
+// Components
+import CommonHeader from './components/CommonHeader';
+import CommonFooter from './components/CommonFooter';
+
 export default {
-  name: 'App'
-}
+  name: 'App',
+
+  components: {
+    CommonHeader,
+    CommonFooter
+  }
+};
 </script>
 
-<style>
+<style lang="scss">
+@import './assets/styles/variables/index.scss';
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: $test-font, $avenir, $helvetica, $arial, $sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

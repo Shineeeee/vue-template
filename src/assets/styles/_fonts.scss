@@ -1,0 +1,6 @@
+@import './variables/index.scss';
+
+@font-face {
+  font-family: $test-font;
+  src: url($test-font-path);
+}
