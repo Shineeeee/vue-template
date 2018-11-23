@@ -32,6 +32,7 @@ module.exports = {
     'no-extra-semi'               : 'error',
     'no-unexpected-multiline'     : 'error',
     'no-unreachable'              : 'error',
-    'no-var'                      : 'error'
+    'no-var'                      : 'error',
+    'no-template-curly-in-string' : 'error'
   }
 }

@@ -14,13 +14,13 @@ const actions = {
    * @param {*} commit
    * @param {String} value string param
    */
-  async testAction ({commit}, value) {
+  async testAction({commit}, value) {
     commit(mtypes.ACTION_NAME, value);
   }
 };
 
 const mutations = {
-  [mtypes.ACTION_NAME] (state, value) {
+  [mtypes.ACTION_NAME](state, value) {
     // TODO: Do something
     console.log(state);
     console.log(value);
