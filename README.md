@@ -97,12 +97,12 @@
 #### 行末にセミコロンを付ける
 &ensp;行末にはセミコロンを付けてください。
 
-OK
+*OK*
 ```JS
 console.log('Hello World');
 ```
 
-NG
+*NG*
 ```JS
 console.log('Hello World')
 ```
@@ -111,7 +111,7 @@ console.log('Hello World')
 #### セミコロンの後には半角スペースを入れる
 &ensp;セミコロンの後には半角スペースを入れてください。
 
-OK
+*OK*
 ```JS
 var foo;
 var foo; var bar;
@@ -123,7 +123,7 @@ if (true) {;}
 ;foo();
 ```
 
-NG
+*NG*
 ```JS
 var foo ;
 var foo;var bar;
@@ -139,7 +139,7 @@ for (i = 0;i < 10;i++) {}
 #### セミコロンは必ず行末に付ける
 &ensp;セミコロンは行頭につけずに、行末に付けてください。
 
-OK
+*OK*
 ```JS
 foo();
 [1, 2, 3].forEach(bar)
@@ -153,7 +153,7 @@ for (
 }
 ```
 
-NG
+*NG*
 ```JS
 foo()
 ;[1, 2, 3].forEach(bar)
@@ -173,7 +173,7 @@ for (
 #### 関数のパーレンの前は半角スペースを入れない
 &ensp;関数のパーレンの前に半角スペースを入れないでください。
 
-OK
+*OK*
 ```JS
 function foo() {
     // ...
@@ -202,7 +202,7 @@ var foo = {
 var foo = async() => 1
 ```
 
-NG
+*NG*
 ```JS
 function foo () {
     // ...
@@ -237,7 +237,7 @@ var foo = async () => 1
 #### 不要なセミコロンは付けない
 &ensp;二重セミコロンなど書かないでください。
 
-OK
+*OK*
 ```JS
 var x = 5;
 
@@ -246,7 +246,7 @@ var foo = function() {
 };
 ```
 
-NG
+*NG*
 ```JS
 var x = 5;;
 
@@ -261,7 +261,7 @@ function foo() {
 #### 想定しない複数行のコードを書かない
 &ensp;セミコロンのつけ忘れなどで構文エラーになるものは書かないでください。
 
-OK
+*OK*
 ```JS
 var foo = bar;
 (1 || 2).baz();
@@ -282,7 +282,7 @@ let tag = function() {}
 tag `hello`
 ```
 
-NG
+*NG*
 ```JS
 var foo = bar
 (1 || 2).baz();
@@ -307,7 +307,7 @@ let x = foo
 #### 実行されないコードを書かない
 &ensp;実行されないコードを書かないでください。ただし、 `function` などは問題ありません。
 
-OK
+*OK*
 ```JS
 function foo() {
     return bar();
@@ -328,7 +328,7 @@ switch (foo) {
 }
 ```
 
-NG
+*NG*
 ```JS
 function foo() {
     return true;
@@ -367,13 +367,13 @@ console.log("done");
 #### var を使わない
 &ensp;`var` を使わずに `const` か `let` を使ってください。
 
-OK
+*OK*
 ```JS
 let x = "y";
 const CONFIG = {};
 ```
 
-NG
+*NG*
 ```JS
 var x = "y";
 var CONFIG = {};
@@ -385,7 +385,7 @@ var CONFIG = {};
 #### ${variable} はバッククォート内に書く
 &ensp;`${variable}` はバッククォート内に書いてください。
 
-OK
+*OK*
 ```JS
 `Hello ${name}!`;
 `Time: ${12 * 60 * 60 * 1000}`;
@@ -393,7 +393,7 @@ OK
 templateFunction`Hello ${name}`;
 ```
 
-NG
+*NG*
 ```JS
 "Hello ${name}!";
 'Hello ${name}!';
@@ -406,7 +406,7 @@ NG
 #### JSDoc を必ず書く
 &ensp;関数、メソッド、クラスを作成した場合は必ず JSDoc を書いてください。
 
-OK
+*OK*
 ```JS
 /**
  * It returns 10
@@ -481,7 +481,7 @@ var foo = {
 setTimeout(() => {}, 10); // since it's an anonymous arrow function
 ```
 
-NG
+*NG*
 ```JS
 function foo() {
     return 10;
@@ -518,7 +518,7 @@ var foo = {
 #### JSDoc の書き方を統一する
 &ensp;JSDoc は下記の通りに書いてください。
 
-OK
+*OK*
 ```JS
 /**
  * Sample function
@@ -589,7 +589,7 @@ class ExtendsSample extends Sample {
 }
 ```
 
-NG
+*NG*
 ```JS
 /**
  * Sample function
@@ -666,7 +666,7 @@ class ExtendsSample extends Sample {
 #### 変数名や関数名はロウワーキャメルケースで書く
 &ensp;変数名、関数名、オブジェクトのキー名などはアッパーキャメルケースで書いてください。
 
-OK
+*OK*
 ```JS
 import { no_camelcased as camelCased } from "external-module";
 
@@ -702,7 +702,7 @@ var { foo: isCamelCased } = bar;
 var { foo: isCamelCased = 1 } = quz;
 ```
 
-NG
+*NG*
 ```JS
 import { no_camelcased } from "external-module"
 
@@ -745,7 +745,7 @@ var { foo: bar_baz = 1 } = quz;
 #### TAB を使わない
 &ensp;コードには半角スペースを使ってください。
 
-OK
+*OK*
 ```JS
 var a = 2;
 
@@ -757,7 +757,7 @@ function test(){}
 var x = 1; // test
 ```
 
-NG
+*NG*
 ```JS
 var a \t= 2;
 
@@ -775,13 +775,13 @@ var x = 1; // \t test
 #### 行末にスペースを書かない
 &ensp;行末にスペースを書かないでください。
 
-OK
+*OK*
 ```JS
 var foo = 0;
 var baz = 5;
 ```
 
-NG
+*NG*
 ```JS
 var foo = 0;//•••••
 var baz = 5;//••
@@ -794,13 +794,13 @@ var baz = 5;//••
 #### シングルクォートを使う
 &ensp;クォートは必ずシングルクォートかバッククォートを使ってください。
 
-OK
+*OK*
 ```JS
 var single = 'single';
 var backtick = `back${x}tick`; // backticks are allowed due to substitution
 ```
 
-NG
+*NG*
 ```JS
 var double = "double";
 var unescaped = "a string containing 'single' quotes";
@@ -812,12 +812,12 @@ var unescaped = "a string containing 'single' quotes";
 #### リテラル文字列の後に半角スペースを入れる
 &ensp;リテラル文字列の後には半角スペースを入れてください。
 
-OK
+*OK*
 ```JS
 func 'Hello World';
 ```
 
-NG
+*NG*
 ```JS
 func'Hello World';
 ```
@@ -828,7 +828,7 @@ func'Hello World';
 #### 関数を表す矢印の前後にスペースを入れる
 &ensp;関数を表す矢印の前後にはスペースを入れてください。
 
-OK
+*OK*
 ```JS
 () => {};
 (a) => {};
@@ -836,7 +836,7 @@ a => a;
 () => {'\n'};
 ```
 
-NG
+*NG*
 ```JS
 ()=> {};
 () =>{};
@@ -854,7 +854,7 @@ a=> a;
 #### オブジェクトの内側には前後にスペースを入れる
 &ensp;オブジェクトの内側には前後にスペースを入れてください。
 
-OK
+*OK*
 ```JS
 var obj = {};
 var obj = { 'foo': 'bar' };
@@ -866,7 +866,7 @@ var { x } = y;
 import { foo } from 'bar';
 ```
 
-NG
+*NG*
 ```JS
 var obj = {'foo': 'bar'};
 var obj = {'foo': 'bar' };
