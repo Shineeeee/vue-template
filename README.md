@@ -87,7 +87,7 @@
 ## Coding Style Guide
 
 ### Overview
-&ensp;ベースは [ESLint]eslies(https://eslint.org/docs/rules/) に準ずるものとし、ここにはカスタマイズしたルールを記載するものとする。
+&ensp;ベースは [ESLint](https://eslint.org/docs/rules/) に準ずるものとし、ここにはカスタマイズしたルールを記載するものとする。
 
 ### eslintrc.js
 - [ここ](./.eslintrc.js) からダウンロード
