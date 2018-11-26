@@ -10,6 +10,7 @@
     1. [Others (MacOS, Linux, etc.)](#others-macos-linux-etc)
 1. [Directory Structure](#directory-structure)
     1. [src](#src)
+1. [Coding Style Guide](#coding-style-guide)
 
 
 ## Overview
@@ -78,4 +79,27 @@
 ├── utils ...................... いくつかのファイルで使用する関数をまとめたファイル一覧。  
 │    └── apis.js ............... API に関する関数を作成する場合はここに書く。他にも成功アラート表示や失敗アラート表示をまとめた alerts.js などと分けても構いません。  
 └── vendors .................... ベンダーファイル一覧。  
+```
+
+## Coding Style Guide
+
+### Overview
+&ensp;ベースは [ESLint]eslies(https://eslint.org/docs/rules/) に準ずるものとし、ここにはカスタマイズしたルールを記載するものとする。
+
+### eslintrc.js
+- [ここ](./.eslintrc.js) からダウンロード
+
+### Rules
+
+#### 行末にセミコロンを付ける
+&ensp;行末にはセミコロンを付けてください。
+
+OK
+```
+console.log('Hello World');
+```
+
+NG
+```
+console.log('Hello World')
 ```
