@@ -134,6 +134,8 @@ for (i = 0;i < 10;i++) {}
 ```
 ##### Ref to [semi-spacing](https://eslint.org/docs/rules/semi-spacing)
 
+---
+
 #### セミコロンは必ず行末に付ける
 &ensp;セミコロンは行頭につけずに、行末に付けてください。
 
@@ -165,6 +167,8 @@ for (
 }
 ```
 ##### Ref to [semi-style](https://eslint.org/docs/rules/semi-style)
+
+---
 
 #### 関数のパーレンの前は半角スペースを入れない
 &ensp;関数のパーレンの前に半角スペースを入れないでください。
@@ -228,6 +232,8 @@ var foo = async () => 1
 ```
 ##### Ref to [space-before-function-paren](https://eslint.org/docs/rules/space-before-function-paren)
 
+---
+
 #### 不要なセミコロンは付けない
 &ensp;二重セミコロンなど書かないでください。
 
@@ -249,6 +255,8 @@ function foo() {
 };
 ```
 ##### Ref to [no-extra-semi](https://eslint.org/docs/rules/no-extra-semi)
+
+---
 
 #### 想定しない複数行のコードを書かない
 &ensp;セミコロンのつけ忘れなどで構文エラーになるものは書かないでください。
@@ -293,6 +301,8 @@ let x = foo
 /regex/g.test(bar)
 ```
 ##### Ref to [no-unexpected-multiline](https://eslint.org/docs/rules/no-unexpected-multiline)
+
+---
 
 #### 実行されないコードを書かない
 &ensp;実行されないコードを書かないでください。ただし、 `function` などは問題ありません。
@@ -352,6 +362,8 @@ console.log("done");
 ```
 ##### Ref to [no-unreachable](https://eslint.org/docs/rules/no-unreachable)
 
+---
+
 #### var を使わない
 &ensp;`var` を使わずに `const` か `let` を使ってください。
 
@@ -367,6 +379,8 @@ var x = "y";
 var CONFIG = {};
 ```
 ##### Ref to [no-var](https://eslint.org/docs/rules/no-var)
+
+---
 
 #### ${variable} はバッククォート内に書く
 &ensp;`${variable}` はバッククォート内に書いてください。
@@ -386,6 +400,8 @@ NG
 "Time: ${12 * 60 * 60 * 1000}";
 ```
 ##### Ref to [no-template-curly-in-string](https://eslint.org/docs/rules/no-template-curly-in-string)
+
+---
 
 #### JSDoc を必ず書く
 &ensp;関数、メソッド、クラスを作成した場合は必ず JSDoc を書いてください。
@@ -496,6 +512,8 @@ var foo = {
 };
 ```
 ##### Ref to [require-jsdoc](https://eslint.org/docs/rules/require-jsdoc)
+
+---
 
 #### JSDoc の書き方を統一する
 &ensp;JSDoc は下記の通りに書いてください。
@@ -643,6 +661,8 @@ class ExtendsSample extends Sample {
 
 ##### Ref to [valid-jsdoc](https://eslint.org/docs/rules/valid-jsdoc)
 
+---
+
 #### 変数名や関数名はロウワーキャメルケースで書く
 &ensp;変数名、関数名、オブジェクトのキー名などはアッパーキャメルケースで書いてください。
 
@@ -720,6 +740,8 @@ var { foo: bar_baz = 1 } = quz;
 ```
 ##### Ref to [camelcase](https://eslint.org/docs/rules/camelcase)
 
+---
+
 #### TAB を使わない
 &ensp;コードには半角スペースを使ってください。
 
@@ -748,6 +770,8 @@ var x = 1; // \t test
 ```
 ##### Ref to [no-tabs](https://eslint.org/docs/rules/no-tabs)
 
+---
+
 #### 行末にスペースを書かない
 &ensp;行末にスペースを書かないでください。
 
@@ -765,6 +789,8 @@ var baz = 5;//••
 ```
 ##### Ref to [no-trailing-spaces](https://eslint.org/docs/rules/no-trailing-spaces)
 
+---
+
 #### シングルクォートを使う
 &ensp;クォートは必ずシングルクォートかバッククォートを使ってください。
 
@@ -781,6 +807,8 @@ var unescaped = "a string containing 'single' quotes";
 ```
 ##### Ref to [quotes](https://eslint.org/docs/rules/quotes)
 
+---
+
 #### リテラル文字列の後に半角スペースを入れる
 &ensp;リテラル文字列の後には半角スペースを入れてください。
 
@@ -794,6 +822,8 @@ NG
 func'Hello World';
 ```
 ##### Ref to [template-tag-spacing](https://eslint.org/docs/rules/template-tag-spacing)
+
+---
 
 #### 関数を表す矢印の前後にスペースを入れる
 &ensp;関数を表す矢印の前後にはスペースを入れてください。
@@ -818,6 +848,8 @@ a=> a;
 () =>{'\n'};
 ```
 ##### Ref to [arrow-spacing](https://eslint.org/docs/rules/arrow-spacing)
+
+---
 
 #### オブジェクトの内側には前後にスペースを入れる
 &ensp;オブジェクトの内側には前後にスペースを入れてください。
