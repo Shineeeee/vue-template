@@ -33,6 +33,41 @@ module.exports = {
     'no-unexpected-multiline'     : 'error',
     'no-unreachable'              : 'error',
     'no-var'                      : 'error',
-    'no-template-curly-in-string' : 'error'
+    'no-template-curly-in-string' : 'error',
+    'require-jsdoc'               : ['error', {
+                                      'require': {
+                                        "FunctionDeclaration"    : true,
+                                        "MethodDefinition"       : true,
+                                        "ClassDeclaration"       : true,
+                                        "ArrowFunctionExpression": true,
+                                        "FunctionExpression"     : true
+                                      }
+                                    }],
+    'valid-jsdoc'                 : ['error', {
+                                      'prefer': {
+                                        'arg'                    : 'param',
+                                        'argument'               : 'param',
+                                        'class'                  : 'constructor',
+                                        'return'                 : 'return',
+                                        'virtual'                : 'abstract'
+                                      },
+                                      'preferType': {
+                                        'Boolean'                : 'Boolean',
+                                        'Number'                 : 'Number',
+                                        'Object'                 : 'Object',
+                                        'String'                 : 'String'
+                                      },
+                                      'requireReturn'            : false,
+                                      'requireParamDescription'  : true,
+                                      'requireReturnDescription' : true
+                                    }],
+    'camelcase'                   : 'error',
+    'no-tabs'                     : 'error',
+    'no-trailing-spaces'          : 'error',
+    'quotes'                      : ['error', 'single'],
+    'switch-colon-spacing'        : ['error', {'after': true, 'before': false}],
+    'template-tag-spacing'        : ['error', 'always'],
+    'arrow-spacing'               : 'error',
+    'object-curly-spacing'        : ['error', 'always']
   }
 }

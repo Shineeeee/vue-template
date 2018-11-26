@@ -11,15 +11,20 @@ const getters = {
 const actions = {
   /**
    * テストアクション
-   * @param {*} commit
-   * @param {String} value string param
+   * @param {*} commit Commit
+   * @param {String} value String value
    */
-  async testAction({commit}, value) {
+  async testAction({ commit }, value) {
     commit(mtypes.ACTION_NAME, value);
   }
 };
 
 const mutations = {
+  /**
+   * テストミューテーション
+   * @param {Object} state State
+   * @param {Object} value Params
+   */
   [mtypes.ACTION_NAME](state, value) {
     // TODO: Do something
     console.log(state);
